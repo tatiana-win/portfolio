@@ -3,4 +3,5 @@ export interface Item {
     description: string;
     img: string;
     url: string;
+    videoUrl: string;
 }

@@ -13,6 +13,7 @@ export const Header = () => {
                   <br />
                   I have extensive knowledge JavaScript, TypeScript, Css, Angular, React, Redux
               </p>
+              <div className="header-divider" />
           </div>
       </header>
     );

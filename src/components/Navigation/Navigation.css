@@ -1,0 +1,48 @@
+.navigation {
+    list-style: none;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 190px;
+    margin-top: 25px;
+    position: relative;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.navigation li {
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 8px 16px;
+    white-space: nowrap;
+    border-left: 3px solid var(--text-light);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    z-index: 5;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation li:hover {
+    color: var(--base-color);
+}
+
+.navigation > .active, .navigation > .active:hover {
+    color: var(--base-color);
+}
+
+.navigation-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 3px;
+    height: 46px;
+    background: var(--base-color);
+    transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+    border-radius: 4px;
+}

@@ -1,0 +1,36 @@
+.preview {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.preview-video {
+    display: flex;
+    max-width: calc(100% - 80px);
+    max-height: calc(100% - 80px);
+}
+
+.preview-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.preview-close > svg {
+    fill: var(--text-light);
+    cursor: pointer;
+}
+
+.preview-close > svg:hover {
+    fill: #eee;
+    cursor: pointer;
+}
