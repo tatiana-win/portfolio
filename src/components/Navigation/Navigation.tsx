@@ -15,7 +15,9 @@ export const Navigation = ({ activeItem, items, onChange }: Props) => {
         onChange(items.find(item => item.company === e.target.id));
     }, [onChange]);
 
-    const activeIndex = useMemo(() => items.findIndex(item => item.company === activeItem.company), [activeItem]);
+    const activeIndex = useMemo(() =>
+            items.findIndex(item => item.company === activeItem.company),
+        [activeItem]);
 
     return (
         <ul className="navigation">

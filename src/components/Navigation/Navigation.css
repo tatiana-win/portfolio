@@ -16,7 +16,7 @@
     color: var(--text-color);
     padding: 8px 16px;
     white-space: nowrap;
-    border-left: 3px solid var(--text-light);
+    border-left: 3px solid lightgray;
     transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
     z-index: 5;
     line-height: 16px;
@@ -39,10 +39,34 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 9;
     width: 3px;
     height: 46px;
     background: var(--base-color);
     transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
     border-radius: 4px;
+}
+
+@media screen and (max-width: 500px) {
+    .navigation {
+        flex-direction: row;
+        margin-left: 0;
+        width: calc(100% - 24px);
+        padding: 0 12px;
+        overflow-y: auto;
+    }
+
+    .navigation .active {
+        border-top: 3px solid var(--base-color);
+        border-left: none;
+    }
+
+    .navigation li {
+        border-top: 3px solid lightgray;
+        border-left: none;
+    }
+
+    .navigation-slider {
+        display: none;
+    }
 }

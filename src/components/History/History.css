@@ -6,10 +6,24 @@
 }
 
 .history-content {
-    margin-left: 30px;
+    padding-left: 30px;
     width: 430px;
     text-align: left;
     min-height: 345px;
+}
+
+@media screen and (max-width: 500px) {
+    .history {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .history-content {
+        padding: 0 12px;
+        width: calc(100% - 24px);
+        text-align: left;
+        min-height: 380px;
+    }
 }
 
 .history-title {
