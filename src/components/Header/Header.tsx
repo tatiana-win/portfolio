@@ -1,20 +1,41 @@
 import './Header.css';
+import { Menu } from '../Menu/Menu';
+import { useEffect, useRef, useState } from 'react';
+import cn from 'clsx';
+
+const OFFSET = 20;
+
 export const Header = () => {
+    const [isScrolling, setIsScrolling] = useState(window.scrollY > OFFSET);
+    const lastScrolling = useRef(window.scrollY > OFFSET);
+
+    const updateScrolling = (value: number) => {
+        const scrolling = value > OFFSET;
+        if (scrolling !== lastScrolling.current) {
+            setIsScrolling(scrolling);
+            lastScrolling.current = scrolling;
+        }
+    }
+
+    const handleScroll = () => {
+        const lastKnownScrollPosition = window.scrollY;
+        window.requestAnimationFrame(() => {
+            updateScrolling(lastKnownScrollPosition);
+        });
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
+    }, []);
+
     return (
-      <header className="header">
-          <div className="header-inner">
-              <h1 className="header-title">
-                  Hi! My name is Tatiana
-                  <br/>
-                  I build things for the web
-              </h1>
-              <p className="header-text">
-                  I’m a JavaScript developer with 7+ years of commercial experience
-                  <br />
-                  I have extensive knowledge JavaScript, TypeScript, Css, Angular, React, Redux
-              </p>
-              <div className="header-divider" />
-          </div>
+      <header className={cn('header', {
+          ['header__scrolling']: isScrolling
+      })}>
+          <Menu />
       </header>
     );
 }

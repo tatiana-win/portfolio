@@ -4,11 +4,13 @@ import './App.css';
 import { Portfolio } from './components/Portfolio/Portfolio';
 import { History } from './components/History/History';
 import { Footer } from './components/Footer/Footer';
+import { About } from './components/About/About';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
         <Header />
+        <About />
         <Portfolio />
         <History />
         <Footer />

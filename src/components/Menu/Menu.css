@@ -1,0 +1,41 @@
+.menu {
+    display: flex;
+    text-align: right;
+    list-style: none;
+    margin: 0;
+}
+
+.menu-link {
+    transition: padding .5s ease-in-out;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    color: var(--text-hover);
+    text-decoration: none
+}
+
+.menu-link.active {
+    color: var(--text-hover);
+}
+
+@media(max-width: 991px) {
+    .menu-link {
+        padding: 17px 20px
+    }
+}
+
+@media(min-width: 992px) {
+    .menu-link {
+        padding: 30px 20px
+    }
+}
+
+.header__scrolling .menu-link {
+    padding: 17px 20px;
+}

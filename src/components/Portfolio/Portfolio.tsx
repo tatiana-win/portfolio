@@ -15,7 +15,7 @@ export const Portfolio = () => {
     }, []);
 
     return (
-        <div className="portfolio">
+        <div className="portfolio" id="portfolio">
             <h2>
                 Portfolio
             </h2>

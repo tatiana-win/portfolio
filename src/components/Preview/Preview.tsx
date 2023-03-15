@@ -22,7 +22,7 @@ export const Preview = ({ videoUrl, onClose }: Props) => {
 
     return (
         <div className="preview">
-            <video controls className="preview-video" src={videoUrl} />
+            <video controls className="preview-video" src={videoUrl} autoPlay />
             <div className="preview-close" onClick={onClose}>
                 <CloseIcon />
             </div>
