@@ -1,0 +1,47 @@
+.history {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.history-content {
+    margin-left: 30px;
+    width: 430px;
+    text-align: left;
+    min-height: 345px;
+}
+
+.history-title {
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.history-period {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+}
+
+.history-duties {
+    list-style: none;
+    padding: 0;
+}
+
+.history-duty {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+}
+
+.history-duty:before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--base-color);
+}

@@ -4,7 +4,8 @@
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #d6d6d6;
-    padding: 80px 28px;
+    padding: 0 28px 80px 28px;
+    margin-top: 80px
 }
 
 .item-content {
@@ -21,14 +22,14 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
-    color: #212529;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
 .item-description {
     font-size: 16px;
     line-height: 24px;
-    color: gray;
+    color: var(--text-secondary);
     margin-bottom: 24px;
 }
 
@@ -36,6 +37,7 @@
     width: 100%;
     margin: auto;
     display: block;
+    border: 1px solid #eee;
 }
 
 .item-container {
@@ -44,7 +46,7 @@
 }
 
 .item-button {
-    background-color: #5b43d6;
+    background-color: var(--base-color);
     border-style: none;
     border-radius: 30px;
     color: #fff;
@@ -56,5 +58,5 @@
 }
 
 .item-button:hover {
-    background-color: #452bc7;
+    background-color: var(--hover-color);
 }
