@@ -2,6 +2,13 @@ import { Item } from '../../models/Item';
 
 export const PORTFOLIO_ITEMS: Item[] = [
     {
+        title: 'Search tracks, artists, albums',
+        description: 'Search your favorite music, view info about albums and artists',
+        img: '/spotify.png',
+        url: '',
+        videoUrl: '/spotify.mp4'
+    },
+    {
         title: 'Trading terminal',
         description: 'All trading data, charts, subscription at one place. You can adjust interface for yor needs. Follow other users and share your ideas and success with Pulse.',
         img: '/terminal.png',
