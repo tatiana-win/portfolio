@@ -6,9 +6,9 @@ export const HISTORY_ITEMS: HistoryItem[] = [
         position: 'JavaScript Developer',
         period: 'May 2019 - February 2023',
         duties: [
-            'Development of new product features based on PO requirements using Angular, React, Redux',
+            'Development of new product features based on PO requirements using Angular, React and Redux',
             'Design api contracts for backend',
-            'Increase test coverage (unit tests, UI tests)',
+            'Increase test coverage (unit tests and UI tests)',
             'Creating library with UI components',
             'Configure CI/CD',
             'Development new widgets'

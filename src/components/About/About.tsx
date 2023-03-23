@@ -11,7 +11,7 @@ export const About = () => {
                 <p className="about-text">
                     I’m a JavaScript developer with 7+ years of commercial experience.
                     <br />
-                    I have extensive knowledge of JavaScript, TypeScript, Css, Angular, React, Redux.
+                    I have extensive knowledge of JavaScript, TypeScript, Css, Angular, React and Redux.
                 </p>
                 <div className="about-divider" />
             </div>

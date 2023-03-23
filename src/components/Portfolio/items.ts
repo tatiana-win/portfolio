@@ -2,8 +2,8 @@ import { Item } from '../../models/Item';
 
 export const PORTFOLIO_ITEMS: Item[] = [
     {
-        title: 'Search tracks, artists, albums',
-        description: 'Search your favorite music, view info about albums and artists',
+        title: 'Search for tracks, artists and albums',
+        description: 'Search for your favorite music, view info about albums and artists',
         img: '/spotify.png',
         url: '',
         videoUrl: '/spotify.mp4'
@@ -16,8 +16,8 @@ export const PORTFOLIO_ITEMS: Item[] = [
         videoUrl: '/terminal.mp4'
     },
     {
-        title: 'Search for avia tickets',
-        description: 'Search for the cheapest tickets, buy online, manage your booking, get the best support 24/7',
+        title: 'Search for airline tickets',
+        description: 'Search for the cheapest tickets, buy online, manage your booking and get the best support 24/7',
         img: '/travel.png',
         url: 'https://tinkoff.ru/travel',
         videoUrl: '/travel.mp4'
