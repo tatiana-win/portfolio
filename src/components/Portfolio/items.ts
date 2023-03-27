@@ -2,7 +2,7 @@ import { Item } from '../../models/Item';
 
 export const PORTFOLIO_ITEMS: Item[] = [
     {
-        title: 'Search for tracks, artists and albums',
+        title: 'Search for tracks, artists and albums using Spotify API',
         description: 'Search for your favorite music, view info about albums and artists',
         img: '/spotify.png',
         url: '',
