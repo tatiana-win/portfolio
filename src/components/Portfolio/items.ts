@@ -10,7 +10,7 @@ export const PORTFOLIO_ITEMS: Item[] = [
     },
     {
         title: 'Trading terminal',
-        description: 'All trading data, charts, subscription at one place. You can adjust interface for yor needs. Follow other users and share your ideas and success with Pulse.',
+        description: 'All trading data, charts, subscription at one place. You can adjust the interface for yor needs. Follow other users, and share your ideas and success with Pulse.',
         img: '/terminal.png',
         url: 'https://tinkoff.ru/terminal',
         videoUrl: '/terminal.mp4'
@@ -24,7 +24,7 @@ export const PORTFOLIO_ITEMS: Item[] = [
     },
     {
         title: 'Widget for events tickets',
-        description: 'Lightweight widget for the easiest selection of places and buying tickets',
+        description: 'Lightweight widget for the easiest seat selection and buying tickets',
         img: '/widget.png',
         url: 'https://crocus-hall.ru/',
         videoUrl: '/widget.mp4'

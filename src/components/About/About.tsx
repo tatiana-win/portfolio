@@ -6,10 +6,10 @@ export const About = () => {
                 <h1 className="about-title">
                     Hi! My name is Tatiana
                     <br/>
-                    I build things for the web
+                    I'm Front End Developer
                 </h1>
                 <p className="about-text">
-                    I’m a JavaScript developer with 7+ years of commercial experience.
+                    I’m a seasoned developer with 9+ years of commercial experience.
                     <br />
                     I have extensive knowledge of JavaScript, TypeScript, Css, Angular, React and Redux.
                 </p>
