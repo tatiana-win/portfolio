@@ -2,6 +2,13 @@ import { Item } from '../../models/Item';
 
 export const PORTFOLIO_ITEMS: Item[] = [
     {
+        title: 'Timepage',
+        description: 'Timepage is a beautifully designed calendar app that helps you stay organized and on top of your schedule. With its intuitive interface and smart features, you can easily manage your events, tasks, and reminders all in one place.',
+        img: '/timepage.png',
+        url: '',
+        videoUrl: '/timepage.mp4'
+    },
+    {
         title: 'Search for tracks, artists and albums using Spotify API',
         description: 'Search for your favorite music, view info about albums and artists',
         img: '/spotify.png',
