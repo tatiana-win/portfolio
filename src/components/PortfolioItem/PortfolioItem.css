@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 40px;
     padding: 16px 28px;
     width: 400px;
@@ -24,6 +24,7 @@
     line-height: 36px;
     color: var(--text-color);
     margin-bottom: 20px;
+    text-align: start;
 }
 
 .item-description {
@@ -31,6 +32,7 @@
     line-height: 24px;
     color: var(--text-secondary);
     margin-bottom: 24px;
+    text-align: start;
 }
 
 .item-img {
@@ -59,4 +61,24 @@
 
 .item-button:hover {
     background-color: var(--hover-color);
+}
+
+.item-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.item-link {
+    margin-left: 20px;
+    background: #fff;
+    color: var(--base-color);
+    border: 1px solid var(--base-color);
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+
+.item-link:hover {
+    background: var(--hover-light-color);
 }
